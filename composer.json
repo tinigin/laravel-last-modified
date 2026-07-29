@@ -1,5 +1,5 @@
 {
-    "name": "abordage/laravel-last-modified",
+    "name": "tinigin/laravel-last-modified",
     "description": "Setting the Last-Modified header and 304 Not Modified response code if the page hasn't changed since the last visit",
     "license": "MIT",
     "keywords": [
