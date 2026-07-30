@@ -6,24 +6,24 @@ Easily setting the `Last-Modified` header and `304 Not Modified` response code.
 
 <p style="text-align: center;" align="center">
 
-<a href="https://packagist.org/packages/abordage/laravel-last-modified" title="Packagist version">
-    <img alt="Packagist Version" src="https://img.shields.io/packagist/v/abordage/laravel-last-modified">
+<a href="https://packagist.org/packages/tinigin/laravel-last-modified" title="Packagist version">
+    <img alt="Packagist Version" src="https://img.shields.io/packagist/v/tinigin/laravel-last-modified">
 </a>
 
-<a href="https://github.com/abordage/laravel-last-modified/actions/workflows/tests.yml" title="GitHub Tests Status">
-    <img alt="GitHub Tests Status" src="https://img.shields.io/github/actions/workflow/status/abordage/laravel-last-modified/tests.yml?label=tests">
+<a href="https://github.com/tinigin/laravel-last-modified/actions/workflows/tests.yml" title="GitHub Tests Status">
+    <img alt="GitHub Tests Status" src="https://img.shields.io/github/actions/workflow/status/tinigin/laravel-last-modified/tests.yml?label=tests">
 </a>
 
-<a href="https://github.com/abordage/laravel-last-modified/actions/workflows/php-cs-fixer.yml" title="GitHub Code Style Status">
-    <img alt="GitHub Code Style Status" src="https://img.shields.io/github/actions/workflow/status/abordage/laravel-last-modified/php-cs-fixer.yml?label=code%20style">
+<a href="https://github.com/tinigin/laravel-last-modified/actions/workflows/php-cs-fixer.yml" title="GitHub Code Style Status">
+    <img alt="GitHub Code Style Status" src="https://img.shields.io/github/actions/workflow/status/tinigin/laravel-last-modified/php-cs-fixer.yml?label=code%20style">
 </a>
 
 <a href="https://www.php.net/" title="PHP version">
-    <img alt="PHP Version Support" src="https://img.shields.io/packagist/php-v/abordage/laravel-last-modified">
+    <img alt="PHP Version Support" src="https://img.shields.io/packagist/php-v/tinigin/laravel-last-modified">
 </a>
 
-<a href="https://github.com/abordage/laravel-last-modified/blob/master/LICENSE.md" title="License">
-    <img alt="License" src="https://img.shields.io/github/license/abordage/laravel-last-modified">
+<a href="https://github.com/tinigin/laravel-last-modified/blob/master/LICENSE.md" title="License">
+    <img alt="License" src="https://img.shields.io/github/license/tinigin/laravel-last-modified">
 </a>
 
 </p>
@@ -31,14 +31,14 @@ Easily setting the `Last-Modified` header and `304 Not Modified` response code.
 
 ## Requirements
 - PHP 8.2+
-- Laravel 11.x / 12.x
+- Laravel 11.x / 12.x / 13.x
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require abordage/laravel-last-modified
+composer require tinigin/laravel-last-modified
 ```
 
 Optionally, you can publish the config file with:
@@ -56,7 +56,7 @@ The setup is very simple and consists of two steps:
 
 ->withMiddleware(function (Middleware $middleware) {
     $middleware->web(append: [
-        \Abordage\LastModified\Middleware\LastModifiedHandling::class,
+        \Tinigin\LastModified\Middleware\LastModifiedHandling::class,
     ]);
 })
 ```
@@ -89,14 +89,6 @@ It's all. Now you can check the headers.
 
 You can check headers in the browser console under the `Network` tab (make sure `Disable Cache` is off) 
 
-**or** 
-
-using https://last-modified.com/en
-
-<p style="text-align: center;" align="center">
-    <img alt="Check Last-Modified" src="https://github.com/abordage/laravel-last-modified/blob/master/docs/images/check-last-modified-rounded.png?raw=true">
-</p>
-
 ## Testing
 
 ```bash
@@ -111,7 +103,7 @@ composer test:phpstan
 composer test:phpcsf
 ```
 
-or see https://github.com/abordage/laravel-last-modified/actions/workflows/tests.yml
+or see https://github.com/tinigin/laravel-last-modified/actions/workflows/tests.yml
 
 ## Feedback
 
@@ -119,12 +111,11 @@ If you have any feedback, comments or suggestions, please feel free to open an i
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/abordage/.github/blob/master/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/tinigin/.github/blob/master/CONTRIBUTING.md) for details.
 
 ## Credits
 
-- [Pavel Bychko](https://github.com/abordage)
-- [All Contributors](https://github.com/abordage/laravel-last-modified/graphs/contributors)
+- [Dmitrii Tinigin](https://github.com/tinigin)
 
 ## License
 

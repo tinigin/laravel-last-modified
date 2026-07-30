@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Abordage\LastModified\Facades;
+namespace Tinigin\LastModified\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static void set(\Illuminate\Support\Carbon|null $updated_at)
  * @method static \Illuminate\Support\Carbon|null get()
  *
- * @see \Abordage\LastModified\LastModified
+ * @see \Tinigin\LastModified\LastModified
  */
 class LastModified extends Facade
 {

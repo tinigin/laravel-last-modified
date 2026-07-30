@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Abordage\LastModified\Tests;
+namespace Tinigin\LastModified\Tests;
 
 use Abordage\LastModified\Facades\LastModified;
 use Abordage\LastModified\LastModifiedServiceProvider;
