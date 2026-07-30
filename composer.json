@@ -11,12 +11,12 @@
     ],
     "authors": [
         {
-            "name": "Pavel Bychko",
-            "email": "box@abordage.dev",
+            "name": "Dmitrii Tinigin",
+            "email": "dmitrii@tinigin.ru",
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/abordage/laravel-last-modified",
+    "homepage": "https://github.com/tinigin/laravel-last-modified",
     "require": {
         "php": "^8.2",
         "illuminate/support": "^11.0 || ^12.0 || ^13.0"
@@ -32,12 +32,12 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Abordage\\LastModified\\": "src"
+            "Tinigin\\LastModified\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Abordage\\LastModified\\Tests\\": "tests"
+            "Tinigin\\LastModified\\Tests\\": "tests"
         }
     },
     "config": {
@@ -46,10 +46,10 @@
     "extra": {
         "laravel": {
             "aliases": {
-                "LastModified": "Abordage\\LastModified\\Facades\\LastModified"
+                "LastModified": "Tinigin\\LastModified\\Facades\\LastModified"
             },
             "providers": [
-                "Abordage\\LastModified\\LastModifiedServiceProvider"
+                "Tinigin\\LastModified\\LastModifiedServiceProvider"
             ]
         }
     },
