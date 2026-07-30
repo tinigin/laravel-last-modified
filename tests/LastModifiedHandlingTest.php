@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tinigin\LastModified\Tests;
 
-use Abordage\LastModified\Facades\LastModified;
-use Abordage\LastModified\LastModifiedServiceProvider;
-use Abordage\LastModified\Middleware\LastModifiedHandling;
+use Tinigin\LastModified\Facades\LastModified;
+use Tinigin\LastModified\LastModifiedServiceProvider;
+use Tinigin\LastModified\Middleware\LastModifiedHandling;
 use Illuminate\Support\Facades\Route;
 use Orchestra\Testbench\TestCase as Orchestra;
 
