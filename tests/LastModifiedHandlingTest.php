@@ -73,6 +73,11 @@ class LastModifiedHandlingTest extends Orchestra
         config(['last-modified.enable' => true]);
     }
 
+    public function testInvalidIfModifiedSinceHeaderIsIgnored(): void
+    {
+        $this->get('/dummy-post-yesterday-update', ['If-Modified-Since' => '134365351550000000:0'])->assertOk();
+    }
+
     public function test304(): void
     {
         $this->get('/dummy-post-yesterday-update', $this->headers)->assertStatus(304);

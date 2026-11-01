@@ -42,7 +42,14 @@ class LastModifiedHandling
             return $response;
         }
 
-        if (LastModified::get()->lessThanOrEqualTo(Carbon::createFromTimeString($requestDateTimeString, 'GMT'))) {
+        try {
+            $ifModifiedSince = Carbon::createFromTimeString($requestDateTimeString, 'GMT');
+        } catch (\Throwable) {
+            // Invalid If-Modified-Since must be ignored (RFC 7232)
+            return $response;
+        }
+
+        if (LastModified::get()->lessThanOrEqualTo($ifModifiedSince)) {
             abort(304);
         }
 
